@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="N'TOUCH - Planners et papeterie de luxe. Chaque page, une intention.">
+    <title>N'TOUCH | Papeterie de Luxe</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- ========================================
+         FIXED HEADER WITH NAVIGATION
+         ======================================== -->
+    <header class="header" id="header">
+        <div class="container header-content">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="#home">N'TOUCH</a>
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <nav class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link">Accueil</a></li>
+                    <li><a href="#shop" class="nav-link">Boutique</a></li>
+                    <li><a href="#about" class="nav-link">À Propos</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <!-- Cart & Mobile Menu -->
+            <div class="header-actions">
+                <button class="cart-btn" id="cartBtn" aria-label="Panier d'achat">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-count" id="cartCount">0</span>
+                </button>
+                <button class="hamburger" id="hamburger" aria-label="Menu de navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ========================================
+         HERO SECTION
+         ======================================== -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">N'TOUCH</h1>
+            <p class="hero-slogan">CHAQUE PAGE, UNE INTENTION</p>
+            <p class="hero-subtitle">Découvrez notre collection de planners et papeterie de luxe, conçus pour transformer vos idées en réalité</p>
+            <a href="#shop" class="btn btn-primary">Découvrir la collection</a>
+        </div>
+    </section>
+
+    <!-- ========================================
+         TRUST INDICATORS BAR
+         ======================================== -->
+    <section class="trust-bar">
+        <div class="container">
+            <div class="trust-items">
+                <div class="trust-item">
+                    <i class="fas fa-truck"></i>
+                    <span>Livraison disponible – Algérie</span>
+                </div>
+                <div class="trust-item">
+                    <i class="fas fa-money-bill-wave"></i>
+                    <span>Paiement à la livraison</span>
+                </div>
+                <div class="trust-item">
+                    <i class="fas fa-clock"></i>
+                    <span>Personnalisation sous 48h</span>
+                </div>
+                <div class="trust-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>14 jours satisfait ou remboursé</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         PRODUCT SHOP SECTION
+         ======================================== -->
+    <section class="shop" id="shop">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Notre Collection</h2>
+                <p class="section-subtitle">Des produits élégants pour accompagner vos ambitions</p>
+            </div>
+            
+            <!-- Product Grid -->
+            <div class="product-grid" id="productGrid">
+                <!-- Products will be dynamically loaded via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         WHY N'TOUCH SECTION
+         ======================================== -->
+    <section class="why-ntouch" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Pourquoi N'TOUCH ?</h2>
+                <p class="section-subtitle">L'excellence au service de vos ambitions</p>
+            </div>
+            
+            <div class="why-grid">
+                <div class="why-item">
+                    <div class="why-icon">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <h3>Qualité Premium</h3>
+                    <p>Nos produits sont fabriqués avec des matériaux nobles : papier 120g, couvertures en cuir véritable et finitions dorées à chaud.</p>
+                </div>
+                
+                <div class="why-item">
+                    <div class="why-icon">
+                        <i class="fas fa-pencil-ruler"></i>
+                    </div>
+                    <h3>Design Élégant</h3>
+                    <p>Chaque détail est pensé pour allier esthétique et fonctionnalité. Un design minimaliste et raffiné qui reflète votre personnalité.</p>
+                </div>
+                
+                <div class="why-item">
+                    <div class="why-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Fait avec Passion</h3>
+                    <p>Derrière chaque produit N'TOUCH, il y a une histoire, une intention et un savoir-faire artisanal qui fait toute la différence.</p>
+                </div>
+                
+                <div class="why-item">
+                    <div class="why-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Garantie Satisfaction</h3>
+                    <p>Nous sommes convaincus de la qualité de nos produits. Satisfait ou remboursé sous 14 jours, sans question.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         TESTIMONIALS SECTION
+         ======================================== -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Ce Que Disent Nos Clients</h2>
+                <p class="section-subtitle">Découvrez l'expérience N'TOUCH</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Un planner absolument magnifique ! La qualité du papier et la finition sont exceptionnelles. Je recommande à 100%."</p>
+                    <div class="testimonial-author">
+                        <strong>Amira L.</strong>
+                        <span>Alger</span>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Le service de personnalisation est incroyable. Mon planner avec mes initiales gravées est devenu mon objet préféré."</p>
+                    <div class="testimonial-author">
+                        <strong>Karim B.</strong>
+                        <span>Oran</span>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Livraison rapide et produit conforme à mes attentes. L'emballage était soigné, parfait pour un cadeau."</p>
+                    <div class="testimonial-author">
+                        <strong>Sarah M.</strong>
+                        <span>Constantine</span>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Enfin une marque algérienne qui offre des produits de luxe ! La qualité rivalise avec les grandes marques internationales."</p>
+                    <div class="testimonial-author">
+                        <strong>Yacine D.</strong>
+                        <span>Annaba</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         CONTACT SECTION
+         ======================================== -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contactez-Nous</h2>
+                <p class="section-subtitle">Une question ? Notre équipe est à votre écoute</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>contact@ntouch.dz</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Téléphone</h4>
+                            <p>+213 XXX XX XX XX</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Localisation</h4>
+                            <p>Algérie - Livraison nationale</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="contactName">Nom complet</label>
+                        <input type="text" id="contactName" name="name" placeholder="Votre nom" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactEmail">Email</label>
+                        <input type="email" id="contactEmail" name="email" placeholder="votre@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactMessage">Message</label>
+                        <textarea id="contactMessage" name="message" rows="5" placeholder="Votre message..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Envoyer le message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         FOOTER
+         ======================================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>N'TOUCH</h4>
+                    <p>Papeterie de luxe pour vos ambitions.</p>
+                    <p class="footer-slogan">Chaque page, une intention.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Accueil</a></li>
+                        <li><a href="#shop">Boutique</a></li>
+                        <li><a href="#about">À Propos</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Informations</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Politique de retour</a></li>
+                        <li><a href="#">Conditions générales</a></li>
+                        <li><a href="#">Politique de confidentialité</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Suivez-nous</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    </div>
+                    <p class="footer-payment">💳 Paiement à la livraison disponible</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 N'TOUCH. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========================================
+         SHOPPING CART SIDEBAR
+         ======================================== -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Votre Panier</h3>
+            <button class="close-btn" id="closeCart" aria-label="Fermer le panier">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        
+        <div class="cart-items" id="cartItems">
+            <p class="empty-cart">Votre panier est vide</p>
+        </div>
+        
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cartTotal">0 DA</span>
+            </div>
+            <button class="btn btn-primary btn-block" id="checkoutBtn">Commander</button>
+        </div>
+    </div>
+
+    <!-- ========================================
+         PRODUCT DETAIL MODAL
+         ======================================== -->
+    <div class="modal" id="productModal" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
+        <div class="modal-overlay" id="modalOverlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="closeModal" aria-label="Fermer">
+                <i class="fas fa-times"></i>
+            </button>
+            
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img id="modalProductImage" src="" alt="">
+                </div>
+                
+                <div class="modal-details">
+                    <h2 id="modalTitle">Product Name</h2>
+                    <p class="modal-price" id="modalPrice">0 DA</p>
+                    <p class="modal-description" id="modalDescription">Description</p>
+                    
+                    <div class="product-features">
+                        <h4>Caractéristiques:</h4>
+                        <ul id="modalFeatures"></ul>
+                    </div>
+                    
+                    <div class="quantity-selector">
+                        <label for="quantity">Quantité:</label>
+                        <div class="quantity-controls">
+                            <button class="qty-btn" id="decreaseQty" aria-label="Diminuer la quantité">-</button>
+                            <input type="number" id="quantity" value="1" min="1" max="10" readonly>
+                            <button class="qty-btn" id="increaseQty" aria-label="Augmenter la quantité">+</button>
+                        </div>
+                    </div>
+                    
+                    <button class="btn btn-primary btn-block" id="addToCartBtn">
+                        <i class="fas fa-shopping-bag"></i> Ajouter au panier
+                    </button>
+                    
+                    <div class="product-guarantee">
+                        <p><i class="fas fa-shield-alt"></i> Garantie qualité N'TOUCH</p>
+                        <p><i class="fas fa-undo"></i> Retour sous 14 jours</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================================
+         ORDER FORM MODAL
+         ======================================== -->
+    <div class="modal" id="orderModal" role="dialog" aria-labelledby="orderModalTitle" aria-hidden="true">
+        <div class="modal-overlay" id="orderModalOverlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="closeOrderModal" aria-label="Fermer">
+                <i class="fas fa-times"></i>
+            </button>
+            
+            <div class="modal-body">
+                <h2 id="orderModalTitle">Finaliser votre commande</h2>
+                
+                <form class="order-form" id="orderForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="lastName">Nom *</label>
+                            <input type="text" id="lastName" name="lastName" placeholder="Votre nom" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="firstName">Prénom *</label>
+                            <input type="text" id="firstName" name="firstName" placeholder="Votre prénom" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Téléphone *</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+213 XXX XX XX XX" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="address">Adresse complète *</label>
+                        <textarea id="address" name="address" rows="3" placeholder="Rue, numéro, bâtiment..." required></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="wilaya">Wilaya *</label>
+                        <select id="wilaya" name="wilaya" required>
+                            <option value="">Sélectionnez votre wilaya</option>
+                            <option value="01">01 - Adrar</option>
+                            <option value="02">02 - Chlef</option>
+                            <option value="03">03 - Laghouat</option>
+                            <option value="04">04 - Oum El Bouaghi</option>
+                            <option value="05">05 - Batna</option>
+                            <option value="06">06 - Béjaïa</option>
+                            <option value="07">07 - Biskra</option>
+                            <option value="08">08 - Béchar</option>
+                            <option value="09">09 - Blida</option>
+                            <option value="10">10 - Bouira</option>
+                            <option value="11">11 - Tamanrasset</option>
+                            <option value="12">12 - Tébessa</option>
+                            <option value="13">13 - Tlemcen</option>
+                            <option value="14">14 - Tiaret</option>
+                            <option value="15">15 - Tizi Ouzou</option>
+                            <option value="16">16 - Alger</option>
+                            <option value="17">17 - Djelfa</option>
+                            <option value="18">18 - Jijel</option>
+                            <option value="19">19 - Sétif</option>
+                            <option value="20">20 - Saïda</option>
+                            <option value="21">21 - Skikda</option>
+                            <option value="22">22 - Sidi Bel Abbès</option>
+                            <option value="23">23 - Annaba</option>
+                            <option value="24">24 - Guelma</option>
+                            <option value="25">25 - Constantine</option>
+                            <option value="26">26 - Médéa</option>
+                            <option value="27">27 - Mostaganem</option>
+                            <option value="28">28 - M'Sila</option>
+                            <option value="29">29 - Mascara</option>
+                            <option value="30">30 - Ouargla</option>
+                            <option value="31">31 - Oran</option>
+                            <option value="32">32 - El Bayadh</option>
+                            <option value="33">33 - Illizi</option>
+                            <option value="34">34 - Bordj Bou Arréridj</option>
+                            <option value="35">35 - Boumerdès</option>
+                            <option value="36">36 - El Tarf</option>
+                            <option value="37">37 - Tindouf</option>
+                            <option value="38">38 - Tissemsilt</option>
+                            <option value="39">39 - El Oued</option>
+                            <option value="40">40 - Khenchela</option>
+                            <option value="41">41 - Souk Ahras</option>
+                            <option value="42">42 - Tipaza</option>
+                            <option value="43">43 - Mila</option>
+                            <option value="44">44 - Aïn Defla</option>
+                            <option value="45">45 - Naâma</option>
+                            <option value="46">46 - Aïn Témouchent</option>
+                            <option value="47">47 - Ghardaïa</option>
+                            <option value="48">48 - Relizane</option>
+                            <option value="49">49 - Timimoun</option>
+                            <option value="50">50 - Bordj Badji Mokhtar</option>
+                            <option value="51">51 - Ouled Djellal</option>
+                            <option value="52">52 - Béni Abbès</option>
+                            <option value="53">53 - In Salah</option>
+                            <option value="54">54 - In Guezzam</option>
+                            <option value="55">55 - Touggourt</option>
+                            <option value="56">56 - Djanet</option>
+                            <option value="57">57 - El M'Ghair</option>
+                            <option value="58">58 - El Meniaa</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="comments">Commentaires (optionnel)</label>
+                        <textarea id="comments" name="comments" rows="3" placeholder="Instructions de livraison, demandes spéciales..."></textarea>
+                    </div>
+                    
+                    <div class="order-summary">
+                        <h4>Récapitulatif</h4>
+                        <div id="orderSummary"></div>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-block">
+                        <i class="fas fa-check"></i> Confirmer la commande
+                    </button>
+                    
+                    <p class="form-note">* Champs obligatoires</p>
+                    <p class="form-note">💳 Paiement à la livraison</p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================================
+         CONFIRMATION MODAL
+         ======================================== -->
+    <div class="modal" id="confirmationModal" role="dialog" aria-hidden="true">
+        <div class="modal-overlay"></div>
+        <div class="modal-content modal-small">
+            <div class="confirmation-content">
+                <div class="confirmation-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <h2>Merci pour votre commande !</h2>
+                <p>Votre commande N'TOUCH a été reçue avec succès.</p>
+                <p>Nous vous contacterons sous peu pour confirmer les détails de livraison.</p>
+                <button class="btn btn-primary" id="closeConfirmation">Continuer vos achats</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Backdrop for cart and modals -->
+    <div class="backdrop" id="backdrop"></div>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
